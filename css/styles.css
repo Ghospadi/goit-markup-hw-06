@@ -1,5 +1,6 @@
 :root {
   --hover-color: #2196f3;
+  --button-hover-color: #188CE8;
   --main-background: #e5e5e5;
   --main-color: #212121;
   --background-color-dark: #2f303a;
@@ -677,6 +678,11 @@ a:focus {
   transition: background-color var(--trans-duration) var(--timing-func);
 }
 
+.modal-submit:hover,
+.modal-submit:focus {
+  background-color: var(--button-hover-color);
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -758,7 +764,7 @@ a:focus {
 
 .subscribe-submit:hover,
 .subscribe-submit:focus {
-  background-color: #188ce8;
+  background-color: var(--button-hover-color);
 }
 
 .subscribe-submit svg {
