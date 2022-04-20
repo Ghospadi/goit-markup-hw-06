@@ -1,6 +1,6 @@
 :root {
   --hover-color: #2196f3;
-  --button-hover-color: #188CE8;
+  --button-hover-color: #188ce8;
   --main-background: #e5e5e5;
   --main-color: #212121;
   --background-color-dark: #2f303a;
@@ -211,7 +211,6 @@ input[type="checkbox"]:checked + .checkbox-icon {
 
 .cards-photo::after {
   content: "";
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -245,7 +244,7 @@ input[type="checkbox"]:checked + .checkbox-icon {
 }
 
 .checkbox p {
-  color: var(--grey-color)
+  color: var(--grey-color);
 }
 
 .checkbox .checkbox-link {
