@@ -65,22 +65,13 @@ input[type="email"]:focus-within ~ .form-icon {
   fill: var(--hover-color);
 }
 
-input[type="checkbox"] {
-  margin-right: 8px;
-}
-
 input[type="checkbox"]:checked + .checkbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   background-image: url(../images/currect_icon.svg);
   background-color: var(--hover-color);
-  margin-right: 7px;
-  margin-bottom: 0;
-  border-radius: 2px;
-  border: 1px solid var(--hover-color); 
+  border: 1px solid var(--hover-color);
 }
 
 .activities {
@@ -263,8 +254,7 @@ input[type="checkbox"]:checked + .checkbox-icon {
   margin-top: -1px;
   border: 2px solid var(--main-color);
   border-radius: 2px;
-  background-size: contain;
-  background-repeat: no-repeat;
+
 }
 
 .company-address {
@@ -491,6 +481,7 @@ input[type="checkbox"]:checked + .checkbox-icon {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
+  background-position: center;
   transition: fill var(--trans-duration) var(--timing-func);
 }
 
@@ -683,8 +674,6 @@ a:focus {
 .modal-form {
   display: flex;
   flex-direction: column;
-  font-weight: 400;
-  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
@@ -871,11 +860,7 @@ a:focus {
 }
 
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  display: none;
 }
 
 .uppercase-header {
