@@ -463,9 +463,6 @@ input[type="checkbox"]:checked + .checkbox-icon {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.label p {
   color: var(--grey-color);
   font-family: Roboto;
   font-size: 12px;
